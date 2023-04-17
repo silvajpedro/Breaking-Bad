@@ -1,0 +1,41 @@
+%flex-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  transition: ease-in-out 1s;
+  nav {
+    width: 30vw;
+    color: #ffff;
+    padding-right: 3vw;
+    ul {
+      @extend %flex-items;
+      justify-content: space-around;
+      list-style: none;
+      font-size: 30px;
+      font-weight: 700;
+        li{
+            cursor: pointer;
+        }
+    }
+  }
+}
+.firstSectionHeader {
+  @extend %flex-items;
+  background-color: rgba(4, 4, 4, 0.5);
+  width: 100%;
+  height: 14vh;
+  figure {
+    img {
+      width: 10vw;
+      object-fit: cover;
+    }
+  }
+}
